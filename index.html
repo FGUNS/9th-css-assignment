@@ -4,65 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="form">
-        <form>
-          <p for="fname">First Name</p>
-          <input type="Text" id="fname" name="Fullname" required />
-          <p for="Email">Email</p> 
-          <input type="Email" id="email" name="email" required />
-          <p >Age(Optional)</p>
-          <input type="number" id="Age" name="Age" required />
-          <p >Which Option Best describe your current role</p>
-          <select name="Please choose an option" id="Please choose an option">
-            <option value="">--Please choose an option--</option>
-            <option value="Student">Student</option>
-            <option value="Full Time Job">Full Time Job</option>
-            <option value="Full Time Learner">Full Time Learner</option>
-            <option value="parrot">Prefer not to say</option>
-            <option value="Other">Other</option>
-          </select>
-          <p>Would you recommend CapacityBay to a friend?</p>
-          <input type="radio" name="gender" value="Definatley" />Definatley
-          <input type="radio" name="gender" value="Maybe" />Maybe
-          <input type="radio" name="gender" value="Not Sure" />Not Sure
-          <p>what is your favourite feature of CapacityBay</p>
-          <select name="Please choose an option" id="Please choose an option">
-            <option value="">--Please choose an option--</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">projects</option>
-            <option value="community">community</option>
-            <option value="open source">open source</option>
-          </select>
-          <p for=" Favourite foods">Favourite Food</p>
-            <option value="beans">Beans</option>
-            <option value="Rice">Rice</option>
-            <option value="Spaghetti">Spaghetti</option>
-            <option value="Soup">soup</option>
-            <option value="Pizza">Pizza</option>
-          </select>
-          <p for="CertifiFull Time Jobe">CertifiFull Time Jobe</p>
-
-          <select name="CertifiFull Time Jobe" id="certifiFull Time Jobe" required>
-            <option value="FSLC">FSLC</option>
-
-            <option value="O level">0 level</option>
-
-            <option value="BSC">BSC</option>
-          </select>
-          <p for="Phomne Number">Phone Number</p>
-
-          <input type="Number" id="phone number" required />
-          <p for="Tell us something about yourself">Tell us about your self</p>
-
-          <textarea id="Textarea" name="Textarea" rows="5" cols="33"></textarea>
-
-          <input type="submit" value="submit" />
-        </form>
-      </div>
+    <div class="surveyform">
+      <form>
+        <p>first Name</p>
+        <input type="text" name="Fullname" placeholder="First Name" />
+        <p>Email</p>
+        <input type="email" name="Email" placeholder="email address" />
+        <p>Age (Optional)</p>
+        <input type="text" name="age" placeholder="age" />
+        <p>Which Option Best describe your current role</p>
+        <select name="please choose an option" placeholder="choose an option">
+          <option value="Please choose an option">
+            --Please choose an option--
+          </option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="parrot">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+        <p>Would you recommend CapacityBay to a friend?</p>
+        <input type="radio" name="gender" value="Definatley" />Definatley
+        <input type="radio" name="gender" value="Maybe" />Maybe
+        <input type="radio" name="gender" value="Not Sure" />Not Sure
+        <p>what is your favourite feature of CapacityBay</p>
+        <select
+          name="Please choose an option"
+          placeholder="Please choose an option"
+        >
+          <option value="">--Please choose an option--</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">projects</option>
+          <option value="community">community</option>
+          <option value="open source">open source</option>
+        </select>
+        <p for="CertifiFull Time Jobe">
+          What would you like to see improved? check all that apply
+        </p>
+        <input type="checkbox" name="gender" value="Definatley" />Definatley
+        <input type="checkbox" name="gender" value="Maybe" />Maybe
+        <input type="checkbox" name="gender" value="Not Sure" />Not Sure
+        <p>Any comments of Suggestion?</p>
+        <textarea
+          id="Textarea"
+          name="Textarea"
+          rows="5"
+          cols="33"
+          placeholder="Enter your comments here"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </body>
 </html>
