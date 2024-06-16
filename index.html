@@ -2,61 +2,133 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no"/>
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="surveyform">
-      <form>
-        <p>first Name</p>
-        <input type="text" name="Fullname" placeholder="First Name" />
-        <p>Email</p>
-        <input type="email" name="Email" placeholder="email address" />
-        <p>Age (Optional)</p>
-        <input type="text" name="age" placeholder="age" />
-        <p>Which Option Best describe your current role</p>
-        <select name="please choose an option" placeholder="choose an option">
-          <option value="Please choose an option">
-            --Please choose an option--
-          </option>
-          <option value="Student">Student</option>
-          <option value="Full Time Job">Full Time Job</option>
-          <option value="Full Time Learner">Full Time Learner</option>
-          <option value="parrot">Prefer not to say</option>
-          <option value="Other">Other</option>
-        </select>
-        <p>Would you recommend CapacityBay to a friend?</p>
-        <input type="radio" name="gender" value="Definatley" />Definatley
-        <input type="radio" name="gender" value="Maybe" />Maybe
-        <input type="radio" name="gender" value="Not Sure" />Not Sure
-        <p>what is your favourite feature of CapacityBay</p>
-        <select
-          name="Please choose an option"
-          placeholder="Please choose an option"
-        >
-          <option value="">--Please choose an option--</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">projects</option>
-          <option value="community">community</option>
-          <option value="open source">open source</option>
-        </select>
-        <p for="CertifiFull Time Jobe">
-          What would you like to see improved? check all that apply
-        </p>
-        <input type="checkbox" name="gender" value="Definatley" />Definatley
-        <input type="checkbox" name="gender" value="Maybe" />Maybe
-        <input type="checkbox" name="gender" value="Not Sure" />Not Sure
-        <p>Any comments of Suggestion?</p>
-        <textarea
-          id="Textarea"
-          name="Textarea"
-          rows="5"
-          cols="33"
-          placeholder="Enter your comments here"
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
+    <div class="heading">
+      <h1 id="heading">CapacityBay Survey form</h1>
+      <h2 id="subheading">
+        Thank you for taking the time to help us improve our platform
+      </h2>
     </div>
+    <form>
+      <div id="content">
+        <label>Name</label><br /><br />
+        <input
+          type="name"
+          name="name"
+          placeholder="Enter your name"
+          class="box"
+        /><br /><br />
+        <label>Email</label><br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          class="box"
+        /><br /><br />
+        <label>Age (optional)</label><br /><br />
+        <input
+          type="age"
+          name="age"
+          placeholder="enter your age"
+          class="box"
+        /><br /><br />
+        <label>Which Option Best describe your current role</label><br /><br />
+        <div id="option1">
+          <select>
+            <option name="--Please choose an opt ion--">
+              --Please choose an option--
+            </option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <br />
+        <br />
+        <label id="head1">Would you recommend CapacityBay to a friend?</label
+        ><br /><br />
+        <input
+          type="radio"
+          name="radio"
+          value="Definatley"
+          class="larger"
+        />&nbsp;&nbsp;&nbsp;Definatley<br /><br />
+        <input
+          type="radio"
+          name="radio"
+          value="Maybe"
+          class="larger"
+        />&nbsp;&nbsp;&nbsp;Maybe<br /><br />
+        <input
+          type="radio"
+          name="radio"
+          value="Not Sure"
+          class="larger"
+        />&nbsp;&nbsp;&nbsp;Not Sure<br /><br />
+        <label id="option1">what is your favourite feature of CapacityBay</label
+        ><br /><br />
+        <div id="option2">
+          <select>
+            <option name="--select an option--">--select an option--</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">projects</option>
+            <option value="community">community</option>
+            <option value="open source">open source</option>
+          </select>
+        </div>
+        <br />
+        <label id="head2"
+          >What would you like to see improved(check all that apply)</label
+        ><br />
+        <div id="content2">
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;front-end project</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;back-end project</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;Data visualization</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;Challenges</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;open source community</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;gitter help rooms</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;videos</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;city meet ups</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;wiki</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;forums</label
+          ><br /><br />
+          <input type="checkbox" name="checkbox" class="larger" /><label
+            >&nbsp;&nbsp;&nbsp;Additional courses</label
+          ><br /><br />
+        </div>
+        <label id="head2">Any comments or suggestion?</label><br /><br />
+        <textarea
+          placeholder="Enter Your Comment Here..."
+          class="placeholder"
+        ></textarea>
+        <button><h3>Submit</h3></button>
+      </div>
+    </form>
   </body>
 </html>
